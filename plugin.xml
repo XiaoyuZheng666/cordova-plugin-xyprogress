@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-xyprogress" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>progressPlugin</name>
+    <js-module name="progressPlugin" src="www/progressPlugin.js">
+        <clobbers target="cordova.plugins.progressPlugin" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVXYProgress">
+                <param name="ios-package" value="CDVXYProgress"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVXYProgress.h" />
+        <source-file src="src/ios/CDVXYProgress.m" />
+
+        <header-file src="src/ios/SVIndefiniteAnimatedView.h" />
+        <source-file src="src/ios/SVIndefiniteAnimatedView.m" />
+
+        <header-file src="src/ios/SVProgressAnimatedView.h" />
+        <source-file src="src/ios/SVProgressAnimatedView.m" />
+
+        <header-file src="src/ios/SVProgressHUD.h" />
+        <source-file src="src/ios/SVProgressHUD.m" />
+
+        <header-file src="src/ios/SVRadialGradientLayer.h" />
+        <source-file src="src/ios/SVRadialGradientLayer.m" />
+    </platform>
+
+</plugin>
