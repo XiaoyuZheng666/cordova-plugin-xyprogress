@@ -19,7 +19,7 @@ show normally:
 
            cordova.plugins.progressPlugin.showProgress(function(success){
         },function(error){
-        },["加载中...",4]);
+        },["加载中..."]);
         
  dismiss:       
      
