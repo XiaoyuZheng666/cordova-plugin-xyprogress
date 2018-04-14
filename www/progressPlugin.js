@@ -10,8 +10,8 @@ Progress.prototype.showProgress = function (success,fail,option) {
      exec(success, fail, 'CDVXYProgress', 'showProgress', option);
 };
 
-Progress.prototype.dismissProgress = function (success,fail,option) {
-     exec(success, fail, 'CDVXYProgress', 'dismissProgress', option);
+Progress.prototype.dismissProgress = function () {
+     exec(null, null, 'CDVXYProgress', 'dismissProgress', null);
 };
                
 //new一个Progress的类对象，并赋值给module.exports

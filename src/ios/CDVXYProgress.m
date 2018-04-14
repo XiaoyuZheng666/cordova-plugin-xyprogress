@@ -14,16 +14,17 @@
     
     NSString*callbackidStr=  command.callbackId;
     NSString*info=[command.arguments objectAtIndex:0];
-    
-    NSNumber* deleyTime=[command.arguments objectAtIndex:1];
 
     [SVProgressHUD showWithStatus:info];
 
-    if (deleyTime) {
-        // 延迟delayTime秒后消失
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(deleyTime.doubleValue * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [SVProgressHUD dismiss];
-        });
+    if (command.arguments.count>1) {
+        NSNumber* deleyTime=[command.arguments objectAtIndex:1];
+        if (deleyTime) {
+            // 延迟delayTime秒后消失
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(deleyTime.doubleValue * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+            });
+        }
     }
 
     if (callbackidStr!=nil) {
