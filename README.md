@@ -1,4 +1,4 @@
-# progressPlugin- A Native IOS Progress Plugin for Cordova
+# cordova-plugin-xyprogress- A Native IOS Progress Plugin for Cordova
 
 ##Requirements
 
@@ -24,9 +24,12 @@ show normally:
  dismiss:       
      
          cordova.plugins.progressPlugin.dismissProgress()
-##Screenshoot         
+##Screenshoot  
+
   ![Alt text](https://github.com/XiaoyuZheng666/progressPlugin/raw/master/Screenshots/1.png)
+  
 ##LICENSE
+
 The MIT License (MIT)
 
 Copyright (c) 2018 xiaoyuzheng
