@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-xyprogress",
+  "version": "1.0.1",
+  "description": "an ios progressindicator which can dismiss automatically",
+  "cordova": {
+    "id": "cordova-plugin-xyprogress",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaoyuZheng666/progressPlugin.git"
+  },
+  "keywords": [
+    "ios",
+    "progress",
+    "cordova",
+    "automatically"
+  ],
+  "author": "xiaoyuzheng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XiaoyuZheng666/progressPlugin/issues"
+  },
+  "homepage": "https://github.com/XiaoyuZheng666/progressPlugin#readme"
+}

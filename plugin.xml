@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-plugin-xyprogress" version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>progressPlugin</name>
-    <js-module name="progressPlugin" src="www/progressPlugin.js">
+    <name>CDVXYProgress</name>
+    <js-module name="CDVXYProgress" src="www/progressPlugin.js">
         <clobbers target="cordova.plugins.progressPlugin" />
     </js-module>
 
@@ -25,6 +25,9 @@
 
         <header-file src="src/ios/SVRadialGradientLayer.h" />
         <source-file src="src/ios/SVRadialGradientLayer.m" />
+
+        <resource-file src="src/ios/SVProgressHUD.bundle"/>
+
     </platform>
 
 </plugin>
