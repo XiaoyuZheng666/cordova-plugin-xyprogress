@@ -25,8 +25,7 @@ show normally:
      
          cordova.plugins.progressPlugin.dismissProgress()
 ##Screenshoot         
-
-  
+  ![Alt text](https://github.com/XiaoyuZheng666/progressPlugin/raw/master/Screenshots/1.png)
 ##LICENSE
 The MIT License (MIT)
 
