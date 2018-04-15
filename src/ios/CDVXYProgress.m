@@ -13,15 +13,21 @@
     CDVPluginResult*pluginResult =nil;
     
     NSString*callbackidStr=  command.callbackId;
-    NSString*info=[command.arguments objectAtIndex:0];
 
+    NSNumber*transparentBackColor=[command.arguments objectAtIndex:0];
+
+    NSString*info=[command.arguments objectAtIndex:1];
+
+    if (transparentBackColor.boolValue) {
+        [SVProgressHUD setBackgroundColor:[UIColor clearColor]];
+    }
     [SVProgressHUD showWithStatus:info];
 
-    if (command.arguments.count>1) {
-        NSNumber* deleyTime=[command.arguments objectAtIndex:1];
+    if (command.arguments.count>2) {
+        NSNumber* deleyTime=[command.arguments objectAtIndex:2];
         if (deleyTime) {
             // 延迟delayTime秒后消失
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(deleyTime.doubleValue * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(deleyTime.doubleValue/10000 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [SVProgressHUD dismiss];
             });
         }

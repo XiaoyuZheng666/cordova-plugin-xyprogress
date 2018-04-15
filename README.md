@@ -11,15 +11,16 @@
 ##Simple Usage
 show atomatically:
 
-       cordova.plugins.progressPlugin.showProgress(function(success){
-        },function(error){
-        },["加载中...",4]);
+           ProgressIndicator.showAnnularWithLabel(false, 40000, "加载中...");
 
 show normally:
 
-           cordova.plugins.progressPlugin.showProgress(function(success){
-        },function(error){
-        },["加载中..."]);
+           ProgressIndicator.showAnnular(false, "加载中...");
+           
+transparent backgroundcolor:
+                  
+           ProgressIndicator.showAnnularWithLabel(true, "加载中...");
+    
         
  dismiss:       
      
