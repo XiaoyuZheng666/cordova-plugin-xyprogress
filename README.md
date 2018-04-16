@@ -24,7 +24,7 @@ transparent backgroundcolor:
         
  dismiss:       
      
-         cordova.plugins.progressPlugin.dismissProgress()
+         ProgressIndicator.dismissProgress()
 ##Screenshoot  
 
   ![Alt text](https://github.com/XiaoyuZheng666/progressPlugin/raw/master/Screenshots/1.png)
