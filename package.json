@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-xyprogress",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "an ios progressindicator which can dismiss automatically",
   "cordova": {
     "id": "cordova-plugin-xyprogress",
